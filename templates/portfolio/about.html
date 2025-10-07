@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>About Me</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'images/profile.jpg' %}" class="img-fluid rounded-circle" alt="Profile Picture" width="200">
+        </div>
+        <div class="col-md-8">
+            <p>Hello! I'm <strong>{{ profile.user.username }}</strong>, a passionate web developer focused on building responsive and user-friendly applications.</p>
+            <p>{{ profile.bio }}</p>
+            <p>
+                <strong>Email:</strong> {{ profile.user.email }} <br>
+                <strong>Location:</strong> {{ profile.location }}
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

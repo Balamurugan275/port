@@ -1,0 +1,27 @@
+/* Minimal stylesheet to avoid 404 and give basic layout */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+.navbar {
+  background: #2b6cb0;
+  color: #fff;
+  padding: 10px 20px;
+}
+.container {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+.footer {
+  text-align: center;
+  padding: 12px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsive image */
+img { max-width: 100%; height: auto; }

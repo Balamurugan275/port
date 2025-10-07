@@ -1,6 +1,9 @@
 # Python
 __pycache__/
 *.py[cod]
+# Python
+__pycache__/
+*.py[cod]
 *$py.class
 *.so
 *.egg
@@ -77,6 +80,10 @@ node_modules/
 # Temp
 *.tmp
 
-# Keep local static and media directories out
+# Keep local static and media directories out (but allow app-level static)
 static/
 media/
+
+# Allow the app-specific static folder so we can commit portfolio/static
+!portfolio/static/
+!portfolio/static/**
