@@ -1,27 +1,21 @@
-/* Minimal stylesheet to avoid 404 and give basic layout */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f7f7f7;
-  color: #333;
+/* Improved stylesheet for the portfolio */
+:root{
+  --primary:#2b6cb0;
+  --muted:#6c757d;
 }
-.navbar {
-  background: #2b6cb0;
-  color: #fff;
-  padding: 10px 20px;
+body{
+  font-family: Inter, 'Segoe UI', Roboto, Arial, sans-serif;
+  margin:0;
+  padding:0;
+  background:#f8f9fa;
+  color:#212529;
 }
-.container {
-  max-width: 960px;
-  margin: 24px auto;
-  padding: 0 16px;
-}
-.footer {
-  text-align: center;
-  padding: 12px 0;
-  color: #666;
-  font-size: 0.9rem;
-}
+.navbar{ background:var(--primary); }
+.container{ max-width:1100px; margin:24px auto; padding:0 18px; }
+.hero{ background:var(--primary); color:#fff; padding:60px 0; margin-bottom:24px; }
+.hero .display-5{ font-weight:700; }
+.lead{ color:#e9eef6; }
+.footer{ text-align:center; padding:18px 0; color:var(--muted); font-size:0.95rem; }
 
-/* Responsive image */
-img { max-width: 100%; height: auto; }
+/* Utility */
+img{ max-width:100%; height:auto; }
